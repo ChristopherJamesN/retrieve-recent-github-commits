@@ -1,30 +1,60 @@
+2019-05-12T00:03:53Z
 Exclude index.js and serviceWorker.js from the test coverage report.
+2019-05-11T21:05:26Z
 Add match prop to Entries component test.
+2019-05-11T21:02:08Z
 Add match prop to Players component test.
+2019-05-11T19:29:03Z
 Pass match prop to Slate component test.
+2019-05-11T18:27:46Z
 Pass a sample lineup to lineup.test.jsx component.
+2019-05-11T18:16:20Z
 Add test coverage to source control.
+2019-05-11T16:22:32Z
 Replace wrapping divs with react fragements.
+2019-05-11T15:22:09Z
 Pass props to components in tests to fix missing params error.
+2019-05-11T15:10:07Z
 Add Router to tests as needed.
+2019-05-11T02:03:27Z
 Stub out basic rendering tests for all components.
+2019-05-11T01:36:56Z
 Rename js files to jsx.
+2019-05-02T02:12:43Z
 Update fetch path for production deployment.
+2019-03-10T17:03:43Z
 Add UTIL to position split.
+2019-03-10T16:32:19Z
 Change split for golfers so that G always appears on different line.
+2019-03-10T16:23:58Z
 Update lineup compenent to display players on different lines.
+2019-01-27T19:40:11Z
 Update dependencies.
+2019-01-09T02:48:05Z
 Add redux and react-redux.
+2019-01-05T17:37:20Z
 Add caching to players component.
+2019-01-05T17:24:06Z
 Add caching to entries component API calls.
+2019-01-05T15:51:47Z
 Add a home button to entries, players, and slate components.
+2019-01-05T02:27:57Z
 Add a lineup component.
+2019-01-04T03:04:24Z
 Split lineups on position on entries component.
+2019-01-03T13:50:17Z
 Add split for lineup string on entries component.
+2019-01-02T13:31:43Z
 Remove unused caching from slates component componentDidMount.
+2019-01-01T16:15:53Z
 Update overall application styling.
+2019-01-01T16:09:59Z
 Use reactstrap table component for table styling on all components.
+2019-01-01T16:07:21Z
 Update styling for table on slate component.
+2019-01-01T14:34:28Z
 Add links to players and entries on the slates show page.
+2019-01-01T02:33:02Z
 Update styling for back button.
+2019-01-01T01:41:55Z
 Update calculation and precision of percentage from max entered entries.
