@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 
 
-def retrieve_recent_github_commits(repos=['dfs-insights-react-client']):
+def retrieve_recent_github_commits(repos=['test-word-react-add-in', 'word-add-in-pass-through-service', 'onit_java_sdk']):
     load_dotenv()
     for repo in repos:
         with open('todays_git_commits.txt', 'a') as open_file:
