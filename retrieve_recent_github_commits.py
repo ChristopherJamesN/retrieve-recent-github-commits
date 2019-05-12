@@ -8,6 +8,8 @@ def retrieve_recent_github_commits(repo='dfs-insights-react-client'):
     response = requests.get(url)
     for value in response.json():
         print(value['commit']['message'])
+        with open('todays_git_commits.txt', 'a') as open_file:
+            open_file.write(value['commit']['message'] + '\n')
 
 
 retrieve_recent_github_commits()

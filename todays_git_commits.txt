@@ -1,0 +1,30 @@
+Exclude index.js and serviceWorker.js from the test coverage report.
+Add match prop to Entries component test.
+Add match prop to Players component test.
+Pass match prop to Slate component test.
+Pass a sample lineup to lineup.test.jsx component.
+Add test coverage to source control.
+Replace wrapping divs with react fragements.
+Pass props to components in tests to fix missing params error.
+Add Router to tests as needed.
+Stub out basic rendering tests for all components.
+Rename js files to jsx.
+Update fetch path for production deployment.
+Add UTIL to position split.
+Change split for golfers so that G always appears on different line.
+Update lineup compenent to display players on different lines.
+Update dependencies.
+Add redux and react-redux.
+Add caching to players component.
+Add caching to entries component API calls.
+Add a home button to entries, players, and slate components.
+Add a lineup component.
+Split lineups on position on entries component.
+Add split for lineup string on entries component.
+Remove unused caching from slates component componentDidMount.
+Update overall application styling.
+Use reactstrap table component for table styling on all components.
+Update styling for table on slate component.
+Add links to players and entries on the slates show page.
+Update styling for back button.
+Update calculation and precision of percentage from max entered entries.
