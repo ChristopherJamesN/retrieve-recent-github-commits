@@ -1,38 +1,55 @@
+
 test-word-react-add-in
+
+2019-05-13T14:06:54Z
+Remove empty line from select dropdown on LoginView.
+
+2019-05-13T13:56:53Z
+Remove host name from LoginView component for now.
+
 2019-05-10T22:01:42Z
 Remove hardcoding of loginURL.
+
 2019-05-10T21:43:35Z
 Add some more cleanup on the dialog api redirection logic.
+
 2019-05-10T21:20:55Z
 Cleanup some of the dialog.html redirection logic.
-2019-05-10T20:23:35Z
-Fix executeRecordSearch test.
-2019-05-10T20:20:27Z
-Remove hardcoding for hostUri and hostName.
+
 word-add-in-pass-through-service
+
 2019-05-07T16:18:35Z
 Add tests for rest with session id endpoints.
+
 2019-05-07T14:53:48Z
 Update tests to run against CLM gold environment rather than Legal Holds
+
 2019-05-07T14:08:37Z
 Update APIController formatting.
+
 2019-05-06T23:03:27Z
 Remove unused setHostName method and endpoint.
+
 2019-05-06T22:10:24Z
 Pass related atom app name to the SDK on new document creation.
+
 onit_java_sdk
+
 2019-05-07T14:07:11Z
 Add tests for retrieving next atom number, current user, and checkout.
+
 2019-05-07T13:48:25Z
 Add unit tests for rest methods using session id as authentication.
 Set these tests against our internal CLM gold environment.
+
 2019-05-06T22:11:38Z
 Add related atom name to the parameters accepted for new documents.
 This makes the method more flexible, and allows for documents to be
 added to any record in an app that is document enabled, not just a
 contracts app or matters app.
+
 2019-05-06T21:41:30Z
 Remove unneeded button_id from new document creation methods.
+
 2019-05-06T20:34:01Z
 Fix typo in atom[related_atoms] form field.
-test-word-react-add-in
