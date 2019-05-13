@@ -2,6 +2,7 @@ import requests
 import json
 import os
 from dotenv import load_dotenv
+from datetime import datetime
 
 
 def retrieve_recent_github_commits(repos=['test-word-react-add-in', 'word-add-in-pass-through-service', 'onit_java_sdk']):
@@ -15,7 +16,11 @@ def retrieve_recent_github_commits(repos=['test-word-react-add-in', 'word-add-in
         for value in response.json():
             print(value['commit']['message'])
             with open('todays_git_commits.txt', 'a') as open_file:
-                open_file.write(value['commit']['committer']['date'] + '\n')
+                d = datetime.strptime(
+                    value['commit']['committer']['date'], '%Y-%m-%d %H:%M:%S')
+                day_string = d.strftime('%Y-%m-%d')
+                open_file.write('\n')
+                open_file.write(day_string + '\n')
                 open_file.write(value['commit']['message'] + '\n')
 
 
