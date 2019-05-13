@@ -1,6 +1,22 @@
 
 test-word-react-add-in
 
+2019-05-13T15:16:53Z
+Add additional tests for the app component.
+
+2019-05-13T15:03:34Z
+Exclude index.tsx from test coverage and rerun tests with coverage.
+
+2019-05-13T14:55:02Z
+Update tests.
+
+2019-05-13T14:26:09Z
+Remove unnecessary variable reassignment from dialog.html.
+
+2019-05-13T14:23:21Z
+Remove unneeded message block from LoginView component.
+Also make sure that clickDocumentAppId is called on app component mount.
+
 2019-05-13T14:06:54Z
 Remove empty line from select dropdown on LoginView.
 
@@ -33,6 +49,21 @@ Remove unused setHostName method and endpoint.
 2019-05-06T22:10:24Z
 Pass related atom app name to the SDK on new document creation.
 
+2019-05-06T21:40:54Z
+Remove unused button id from new document endpoint.
+
+2019-05-06T20:35:35Z
+Use document name value passed from react client rather than hard-coding
+
+2019-05-06T19:41:33Z
+Remove unneeded fields for new document upload endpoint.
+
+2019-05-06T19:01:46Z
+Retrieve atom dictionary id for document app.
+
+2019-05-06T18:28:19Z
+Add an endpoint to handle creating new document records.
+
 onit_java_sdk
 
 2019-05-07T14:07:11Z
@@ -53,3 +84,21 @@ Remove unneeded button_id from new document creation methods.
 
 2019-05-06T20:34:01Z
 Fix typo in atom[related_atoms] form field.
+
+2019-05-06T19:40:10Z
+Add needed fields for new document upload method.
+
+2019-05-06T19:21:26Z
+Remove major version and minor version parameters.
+Removing these parameters from the restCheckInNewDocumentWithSessionId
+method. These parameters are assumed to be 1 and 0 on a new document
+check-in.
+
+2019-05-06T18:27:28Z
+Add a method to check-in new documents with session_id.
+
+2019-05-04T19:46:47Z
+Fix typo in "_attachment_fields[]" fileParts field.
+
+2019-05-02T19:42:43Z
+Move base64 decoding and file handling to pass-through service.

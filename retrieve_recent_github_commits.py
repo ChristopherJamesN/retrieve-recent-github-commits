@@ -12,7 +12,7 @@ def retrieve_recent_github_commits(repos=['test-word-react-add-in', 'word-add-in
     for repo in repos:
         with open('todays_git_commits.txt', 'a') as open_file:
             open_file.write('\n' + repo + '\n')
-        url = f'https://api.github.com/repos/christopherjamesn/{repo}/commits?page=1&per_page=5'
+        url = f'https://api.github.com/repos/christopherjamesn/{repo}/commits?page=1&per_page=10'
         response = requests.get(
             url, auth=('ChristopherJamesN', os.environ['PERSONAL_ACCESS_TOKEN']))
         for value in response.json():
