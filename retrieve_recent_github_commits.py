@@ -24,4 +24,12 @@ def retrieve_recent_github_commits(repos=['test-word-react-add-in', 'word-add-in
                 open_file.write(value['commit']['message'] + '\n')
 
 
+def retrieve_recent_gitlab_commits(repos=['test-word-react-add-in', 'word-add-in-pass-through-service', 'onit_java_sdk']):
+    load_dotenv()
+    for repo in repos:
+        with open('todays_gitlab_commits.txt', 'a') as open_file:
+            open_file.write(repo + '\n')
+
+
 retrieve_recent_github_commits()
+retrieve_recent_gitlab_commits()
