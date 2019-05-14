@@ -1,0 +1,104 @@
+
+test-word-react-add-in
+
+2019-05-14T02:07:02Z
+Add tests for retrieving document enabled apps from localStorage.
+
+2019-05-14T01:31:25Z
+Add tests for fetchCurrentUser.
+
+2019-05-14T00:54:47Z
+Add a test for fetching the next atom number.
+
+2019-05-14T00:37:35Z
+Increase test coverage for app component.
+
+2019-05-13T21:58:27Z
+Add a snapshot test for the top level app component.
+
+2019-05-13T21:53:46Z
+Add tests for SearchAppBar component.
+
+2019-05-13T20:17:41Z
+Add additional tests for AppSelectionTab component.
+
+2019-05-13T19:56:01Z
+Add a test for submitting a new environment uri.
+
+2019-05-13T18:29:37Z
+Use index as key for MenuItems.
+
+2019-05-13T18:20:46Z
+Fix DOM nesting warnings on CheckInView component.
+Replace out divs with react fragments and inner divs with Typography components.
+
+word-add-in-pass-through-service
+
+2019-05-07T16:18:35Z
+Add tests for rest with session id endpoints.
+
+2019-05-07T14:53:48Z
+Update tests to run against CLM gold environment rather than Legal Holds
+
+2019-05-07T14:08:37Z
+Update APIController formatting.
+
+2019-05-06T23:03:27Z
+Remove unused setHostName method and endpoint.
+
+2019-05-06T22:10:24Z
+Pass related atom app name to the SDK on new document creation.
+
+2019-05-06T21:40:54Z
+Remove unused button id from new document endpoint.
+
+2019-05-06T20:35:35Z
+Use document name value passed from react client rather than hard-coding
+
+2019-05-06T19:41:33Z
+Remove unneeded fields for new document upload endpoint.
+
+2019-05-06T19:01:46Z
+Retrieve atom dictionary id for document app.
+
+2019-05-06T18:28:19Z
+Add an endpoint to handle creating new document records.
+
+onit_java_sdk
+
+2019-05-07T14:07:11Z
+Add tests for retrieving next atom number, current user, and checkout.
+
+2019-05-07T13:48:25Z
+Add unit tests for rest methods using session id as authentication.
+Set these tests against our internal CLM gold environment.
+
+2019-05-06T22:11:38Z
+Add related atom name to the parameters accepted for new documents.
+This makes the method more flexible, and allows for documents to be
+added to any record in an app that is document enabled, not just a
+contracts app or matters app.
+
+2019-05-06T21:41:30Z
+Remove unneeded button_id from new document creation methods.
+
+2019-05-06T20:34:01Z
+Fix typo in atom[related_atoms] form field.
+
+2019-05-06T19:40:10Z
+Add needed fields for new document upload method.
+
+2019-05-06T19:21:26Z
+Remove major version and minor version parameters.
+Removing these parameters from the restCheckInNewDocumentWithSessionId
+method. These parameters are assumed to be 1 and 0 on a new document
+check-in.
+
+2019-05-06T18:27:28Z
+Add a method to check-in new documents with session_id.
+
+2019-05-04T19:46:47Z
+Fix typo in "_attachment_fields[]" fileParts field.
+
+2019-05-02T19:42:43Z
+Move base64 decoding and file handling to pass-through service.

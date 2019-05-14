@@ -1,0 +1,3 @@
+test-word-react-add-in
+word-add-in-pass-through-service
+onit_java_sdk
