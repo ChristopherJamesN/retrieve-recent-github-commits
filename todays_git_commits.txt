@@ -1,104 +1,122 @@
 
 test-word-react-add-in
-
-2019-05-14T02:07:02Z
-Add tests for retrieving document enabled apps from localStorage.
-
-2019-05-14T01:31:25Z
-Add tests for fetchCurrentUser.
-
-2019-05-14T00:54:47Z
-Add a test for fetching the next atom number.
-
-2019-05-14T00:37:35Z
-Increase test coverage for app component.
-
-2019-05-13T21:58:27Z
-Add a snapshot test for the top level app component.
-
-2019-05-13T21:53:46Z
-Add tests for SearchAppBar component.
-
-2019-05-13T20:17:41Z
-Add additional tests for AppSelectionTab component.
-
-2019-05-13T19:56:01Z
-Add a test for submitting a new environment uri.
-
-2019-05-13T18:29:37Z
-Use index as key for MenuItems.
-
-2019-05-13T18:20:46Z
-Fix DOM nesting warnings on CheckInView component.
-Replace out divs with react fragments and inner divs with Typography components.
+*Update dist for deployment.
+*Update styling on the CheckInView component.
+*Add RecordMetadataGrid to CheckInView.
+*Add a RecordMetadataGrid component and corresponding tests.
+*Add metadata grid to the DocumentDetailView.
+*Use moment to update date stylings to 'fromNow' format.
+*Install moment for date formatting.
+*Update button styling on new document check-in.
+*Update styling on LoginView.
+*Update styling on create new record view.
+*Update font styles on document detail view.
+*Update alignment of items on record detail view.
+*Update styling of document version list fonts.
+*Update styling of fonts on record detail view.
+*Update text styling on record list view.
+*Update styling on logout button font.
+*Update button styling on default search view.
+*Update font and icon styling on search bar.
+*Update fonts for app tab labels.
+*Remove padding from bottom button bar.
+Also add style for font on AppSelectionTab.
+*Add CssBaseline from MUI for better default styling.
+*Set the borderTop property on the bottom button bar.
+*Move save button on check-in view to bottom bar.
+*Add padding to bottom grid bar.
+*Set the background color of the back buttons grid to white.
+This creates a "bottom sticky" effect and prevents the background list
+from showing through the bottom bar.
 
 word-add-in-pass-through-service
-
-2019-05-07T16:18:35Z
-Add tests for rest with session id endpoints.
-
-2019-05-07T14:53:48Z
-Update tests to run against CLM gold environment rather than Legal Holds
-
-2019-05-07T14:08:37Z
-Update APIController formatting.
-
-2019-05-06T23:03:27Z
-Remove unused setHostName method and endpoint.
-
-2019-05-06T22:10:24Z
-Pass related atom app name to the SDK on new document creation.
-
-2019-05-06T21:40:54Z
-Remove unused button id from new document endpoint.
-
-2019-05-06T20:35:35Z
-Use document name value passed from react client rather than hard-coding
-
-2019-05-06T19:41:33Z
-Remove unneeded fields for new document upload endpoint.
-
-2019-05-06T19:01:46Z
-Retrieve atom dictionary id for document app.
-
-2019-05-06T18:28:19Z
-Add an endpoint to handle creating new document records.
+*Update build script.
+*Update build script and move javadoc directory into the project root.
+*Update build script and move javadoc directory into the project root.
+*Add javadoc script to the .gitlab-ci.yml.
+*Generate javadoc for project.
+*Update .gitlab-ci.yml to only perform mvn test.
+Also cleaned up unneeded variables in the tests.
+*Remove unneeded environment constants file and references.
+These values are passed back from the React client to the pass-through
+service. The service itself should not need to maintain any information
+about the end user's environment.
+*Remove unused api and non-session id authenticated endpoints.
+*Remove unneeded commented out code for cached responses.
+*Improve performance of restGetDocEnabledAppsWithSessionId.
+Previously an unnecessary call to restGetDocEnabledAppsWithSessionId
+would be made. Now the combined value for all document enabled app id's
+to be searched on, separated by & is being passed to the endpoint from
+the react client in the query string.
+*Add aspose words library to version control.
+*Fix tests for retrieving document enabled apps.
+*Remove workspace.xml from version control as per IntelliJ Docs.
+*Update target in compiler.xml.
+*Use maven image for build script.
+*Add .gitignore.
+*Add maven to path before executing build script.
+*Fix syntax in .gitlab-ci.yml.
+*Further .gitlab-ci.yml build script updates.
+*Update script in build stage of .gitlab-ci.yml.
+*Add a .gitlab-ci.yml config file.
+This file defines the CI/CD pipeline GitLab will run when commits are
+pushed.
+*Fix tests for pass-through service based on current CLM data.
+*Structure the record data returned to include only needed values.
+Done for the restGetMostRecentRecord endpoint.
+*Update query parameter from documentAppId to appId.
+The id passed into the function will be either the contracts app id or
+the matters app id, so I am renaming the variable appropriately.
+*Add a restGetMostRecentRecord function.
+This function will retrieve the most recently added atom from all apps
+with a relationship to the documents app.
 
 onit_java_sdk
+*Merge branch 'master' of https://gitlab.onit.com/product_lines/onit_java_sdk into word_add_in_onit_java_sdk
+*Merge branch 'process_builder_sdk' into 'master'
 
-2019-05-07T14:07:11Z
-Add tests for retrieving next atom number, current user, and checkout.
+Support for parsing liquid, methods to retrieve metadata, fixed test
 
-2019-05-07T13:48:25Z
-Add unit tests for rest methods using session id as authentication.
+See merge request product_lines/onit_java_sdk!5
+*Maintenance Changes - cleaned-up warnings - refactored away AtomType class - changed project to support Java 1.8 over 9
+*Maintenance Changes - cleaned-up warnings - refactored away AtomType class - changed project to support Java 1.8 over 9
+*Merge branch 'word_add_in_onit_java_sdk' into 'master'
+
+[PLD-10] Update the SDK to Provide the Ability to Use SessionId for Authentication
+
+See merge request product_lines/onit_java_sdk!4
+*Add restGetMostRecentAtomWithSessionId method to retrieve most recent atom.
+Also update sessionId and xCsrfToken used in the tests.
+*Add tests for retrieving next atom number, current user, and checkout.
+*Add unit tests for rest methods using session id as authentication.
 Set these tests against our internal CLM gold environment.
-
-2019-05-06T22:11:38Z
-Add related atom name to the parameters accepted for new documents.
+*Add related atom name to the parameters accepted for new documents.
 This makes the method more flexible, and allows for documents to be
 added to any record in an app that is document enabled, not just a
 contracts app or matters app.
-
-2019-05-06T21:41:30Z
-Remove unneeded button_id from new document creation methods.
-
-2019-05-06T20:34:01Z
-Fix typo in atom[related_atoms] form field.
-
-2019-05-06T19:40:10Z
-Add needed fields for new document upload method.
-
-2019-05-06T19:21:26Z
-Remove major version and minor version parameters.
+*Remove unneeded button_id from new document creation methods.
+*Fix typo in atom[related_atoms] form field.
+*Add needed fields for new document upload method.
+*Remove major version and minor version parameters.
 Removing these parameters from the restCheckInNewDocumentWithSessionId
 method. These parameters are assumed to be 1 and 0 on a new document
 check-in.
-
-2019-05-06T18:27:28Z
-Add a method to check-in new documents with session_id.
-
-2019-05-04T19:46:47Z
-Fix typo in "_attachment_fields[]" fileParts field.
-
-2019-05-02T19:42:43Z
-Move base64 decoding and file handling to pass-through service.
+*Add a method to check-in new documents with session_id.
+*Fix typo in "_attachment_fields[]" fileParts field.
+*Move base64 decoding and file handling to pass-through service.
+*Add an endpoint to retrieve the current user using session id.
+*Add a new endpoint to retrieve the next atom number.
+*Set the file name based on the atomName that is passed in.
+Also remove unnecessary setting of the content-type header from the
+doUploadSessionId method.
+*Add all needed parameters to uploadDocumentWithSessionId.
+*Stub out all necessary form fields for uploadDocumentWithSessionId
+*Fix request type for doUploadWithSessionId method (put to post).
+*Update logic in uploadDocumentWithSessionId to accept a string for file.
+Accept a binary string representing the file, and create a new file on
+the fly to upload to the core Onit platform.
+*Add uploadDocumentWithSessionId and doUploadWithSessionId methods.
+These methods were added to the RestAPI class, and are used to make the
+put request to create a new document version and upload the given
+document to associate with that new version.
+*Add a restCheckInDocumentWithSessionId method and corresponding constant
