@@ -24,6 +24,15 @@ def retrieve_recent_github_commits(repos=['test-word-react-add-in', 'word-add-in
                 open_file.write('*' + value['commit']['message'] + '\n')
 
 
+def retrieve_number_of_github_commits():
+    load_dotenv()
+    url = f'https://api.github.com/repos/christopherjamesn/commits'
+    response = requests.get(
+        url, auth=('ChristopherJamesN', os.environ['PERSONAL_ACCESS_TOKEN']))
+    for value in response.json():
+        print(value)
+
+
 def retrieve_recent_gitlab_commits(repos=['test-word-react-add-in', 'word-add-in-pass-through-service', 'onit_java_sdk']):
     load_dotenv()
     if os.path.isfile('todays_gitlab_commits.txt'):
@@ -33,5 +42,4 @@ def retrieve_recent_gitlab_commits(repos=['test-word-react-add-in', 'word-add-in
             open_file.write('\n' + repo + '\n')
 
 
-retrieve_recent_github_commits()
-retrieve_recent_gitlab_commits()
+retrieve_number_of_github_commits()
